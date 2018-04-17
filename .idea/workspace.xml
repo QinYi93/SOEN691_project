@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66eaf26c-a967-46f1-8aec-5413795df5d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/itembased_sp.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/userbased_sp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SOEN691_project.iml" afterPath="$PROJECT_DIR$/.idea/SOEN691_project.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/result_analyst.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results/item_based_prediciton.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results/user_based_prediciton.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,13 +28,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="itembased_sp.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="itembased_sp.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/itembased_sp.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
               <caret line="38" column="60" lean-forward="true" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result_analyst.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/result_analyst.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,6 +63,7 @@
         <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/code/itembased_sp.py" />
         <option value="$PROJECT_DIR$/code/userbased_sp.py" />
+        <option value="$PROJECT_DIR$/code/result_analyst.py" />
       </list>
     </option>
   </component>
@@ -118,6 +130,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/results" />
       <recent name="$PROJECT_DIR$/code" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -238,6 +251,24 @@
           <caret line="38" column="60" lean-forward="true" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/item_based_prediciton.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/result_analyst.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
