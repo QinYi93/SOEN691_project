@@ -36,4 +36,4 @@ print(str(rmse))
 
 # Generate top 10 movie recommendations for each user
 userRecs = model.recommendForAllUsers(10)
-userRecs = userRecs.sort('userId', ascending=False).show(10)
+userRecs = userRecs.sort('userId', ascending=False).show(5)
