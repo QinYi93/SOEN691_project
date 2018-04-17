@@ -8,7 +8,7 @@ ratingsRDD = lines.map(lambda p: Row(userId=int(p[0]), movieId=int(p[1]),
                                      rating=float(p[2]), timestamp=int(p[3])))
 ratings = spark.createDataFrame(ratingsRDD)
 
-(training, test) = ratings.randomSplit([0.7, 0.3], seed=123)
+(training, test) = ratings.randomSplit([0.9, 0.1], seed=123)
 
 global_score = training.agg({"rating": "avg"}).collect()
 global_mean = float(global_score[0][0])
@@ -21,7 +21,7 @@ training = training.withColumn("user-interaction", training.rating - (training['
 
 # Build the recommendation model using ALS on the training data
 # Note we set cold start strategy to 'drop' to ensure we don't get NaN evaluation metrics
-als = ALS(maxIter=8, rank=16, regParam=0.01, userCol="userId", itemCol="movieId", ratingCol="user-interaction",
+als = ALS(maxIter=10, rank=20, regParam=0.01, userCol="userId", itemCol="movieId", ratingCol="user-interaction",
           coldStartStrategy="drop").setSeed(123)
 model = als.fit(training)
 
