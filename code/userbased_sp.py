@@ -3,7 +3,7 @@ from pyspark.ml.recommendation import ALS
 from pyspark.ml.evaluation import RegressionEvaluator
 
 spark = SparkSession.builder.appName("collaborative_filtering").getOrCreate()
-lines = spark.read.csv("./data/ratings.csv").rdd
+lines = spark.read.csv("../data/ratings.csv").rdd
 ratingsRDD = lines.map(lambda p: Row(userId=int(p[0]), movieId=int(p[1]),
                                      rating=float(p[2]), timestamp=int(p[3])))
 ratings = spark.createDataFrame(ratingsRDD)
