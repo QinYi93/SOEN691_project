@@ -1,13 +1,7 @@
 Readme
 ———————
-1. User-Based Collaborative Filtering:
-python3 ./code/userBased.py ./data/ratings.csv ./data/toBeRated.csv cosine jaccard pearson
+1. itembased_sp.py and userbased_sp.py calculate the RMSE value through spark on different density levels and make the recommendations.
 
-After the above command finish executing, it will provide result1.csv as the output file which will have the predicted ratings. Also, rmse_user.txt will be an output which shows the rmse obtained in all the three types of similarity and also shows which one is the best.
+2. itemBased.py and userBased.py calculate the RMSE value through python on different methods(jaccard, cosine, pearson).
 
-2. Item-Based Collaborative Filtering:
-python3 ./code/itemBased.py ./data/rating.csv ./data/toBeRated.csv cosine jaccard pearson
-
-After the above command finish executing, it will provide result2.csv as the output file which will have the predicted ratings. Also, rmse_item.txt will be an output which shows the rmse obtained in all the three types of similarity and also shows which one is the best.
-
-
+3. result_analyst.py makes the recommendations based on the results which are calculated by pearson correlation.
