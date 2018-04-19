@@ -78,7 +78,6 @@ def crossValidation(data):
 				sim_jaccard = sim_user_jaccard[user-1]
 				sim_pearson = sim_user_pearson[user-1]
 				ind = (M[:,item-1] > 0)
-				#ind[user-1] = False
 				normal_cosine = np.sum(np.absolute(sim_cosine[ind]))
 				normal_jaccard = np.sum(np.absolute(sim_jaccard[ind]))
 				normal_pearson = np.sum(np.absolute(sim_pearson[ind]))
@@ -121,7 +120,7 @@ def crossValidation(data):
 	rmse_pearson = sum(rmse_pearson) / float(len(rmse_pearson))
 	rmse_jaccard = sum(rmse_jaccard) / float(len(rmse_jaccard))
 
-	f_rmse = open("./results/rmse_user.txt","w")
+	f_rmse = open("../results/rmse_user.txt","w")
 	rmse = [rmse_cosine, rmse_jaccard, rmse_pearson]
 	req_sim = rmse.index(min(rmse))
 	f_rmse.write(str(req_sim))
@@ -166,7 +165,6 @@ def predictRating(recommend_data):
 		if np.count_nonzero(M[user-1]):
 			sim = sim_user[user-1]
 			ind = (M[:,item-1] > 0)
-			#ind[user-1] = False
 			normal = np.sum(np.absolute(sim[ind]))
 			if normal > 0:
 				pred = np.dot(sim,M[:,item-1])/normal

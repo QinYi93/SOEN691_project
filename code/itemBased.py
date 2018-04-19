@@ -1,4 +1,3 @@
-# python3 itemBased.py ratings.csv toBeRated.csv cosine jaccard pearson
 import numpy as np
 import scipy.stats
 import scipy.spatial
@@ -13,7 +12,7 @@ warnings.simplefilter("error")
 users = 6040
 items = 3952
 
-#calculate similarity using jaccard, cosine and
+#calculate similarity using jaccard, cosine and pearson
 def calSimilarity(data):
 	k_fold = KFold(n_splits=10)
 	matrix = np.zeros((users,items))
@@ -24,7 +23,7 @@ def calSimilarity(data):
 	rmse_jaccard = []
 	rmse_pearson = []
 
-#split dataset into test and train set
+#split dataset into testing and training set
 	for train_indices, test_indices in k_fold.split(data):
 		train = [data[i] for i in train_indices]
 		test = [data[i] for i in test_indices]
@@ -93,9 +92,10 @@ def calSimilarity(data):
 	rmse_pearson = sum(rmse_pearson) / float(len(rmse_pearson))
 	rmse_jaccard = sum(rmse_jaccard) / float(len(rmse_jaccard))
 	print(str(rmse_cosine) + "\t" + str(rmse_jaccard) + "\t" + str(rmse_pearson))
-	f_rmse = open("./results/rmse_item.txt","w")
+	f_rmse = open("../results/rmse_item.txt","w")
 	f_rmse.write(str(rmse_cosine) + "\t" + str(rmse_jaccard) + "\t" + str(rmse_pearson) + "\n")
-    #get minimal
+
+    # choose the minimal one
 	rmse = [rmse_cosine, rmse_jaccard, rmse_pearson]
 	req_sim = rmse.index(min(rmse))
 	print(req_sim)
@@ -126,6 +126,7 @@ def predictRating(recommend_data):
 		user = toBeRated["user"][e]
 		item = toBeRated["item"][e]
 		pred = 3.0
+
 		#item-based
 		if np.count_nonzero(M[:,item-1]):
 			sim = sim_item[item-1]

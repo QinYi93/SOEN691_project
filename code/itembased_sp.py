@@ -20,13 +20,10 @@ training = training.join(item_score, "movieId")
 training = training.withColumn("item-interaction",
                                training.rating - (training['item-mean'] - global_mean))
 
-# Build the recommendation model using ALS on the training data
-# Note we set cold start strategy to 'drop' to ensure we don't get NaN evaluation metrics
 als = ALS(maxIter=10, rank=20, regParam=0.01, userCol="userId", itemCol="movieId", ratingCol="item-interaction",
           coldStartStrategy="drop").setSeed(123)
 model = als.fit(training)
 
-# Evaluate the model by computing the RMSE on the test data
 predictions = model.transform(test)
 predictions = predictions.join(item_score, "movieId")
 predictions = predictions.withColumn("final-rating", predictions.prediction + predictions['item-mean'] - global_mean)
@@ -34,6 +31,5 @@ evaluator = RegressionEvaluator(metricName="rmse", labelCol="rating", prediction
 rmse = evaluator.evaluate(predictions)
 print(str(rmse))
 
-# Generate top 10 movie recommendations for each user
 userRecs = model.recommendForAllUsers(10)
 userRecs = userRecs.sort('userId', ascending=False).show(5)
