@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66eaf26c-a967-46f1-8aec-5413795df5d7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/itembased_sp.py" afterPath="$PROJECT_DIR$/code/itembased_sp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/userbased_sp.py" afterPath="$PROJECT_DIR$/code/userbased_sp.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/itemBased.py" afterPath="$PROJECT_DIR$/code/itemBased.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,19 +18,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="itembased_sp.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/code/itembased_sp.py">
+      <file leaf-file-name="itemBased.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/itemBased.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="103">
+              <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>6039</find>
+      <find>1212</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,6 +46,7 @@
         <option value="$PROJECT_DIR$/code/result_analyst.py" />
         <option value="$PROJECT_DIR$/code/userbased_sp.py" />
         <option value="$PROJECT_DIR$/code/itembased_sp.py" />
+        <option value="$PROJECT_DIR$/code/itemBased.py" />
       </list>
     </option>
   </component>
@@ -311,14 +315,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/itemBased.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/userBased.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -327,13 +323,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/ratings.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7994">
+          <caret line="96610" column="21" lean-forward="true" selection-start-line="96610" selection-start-column="21" selection-end-line="96610" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/python.app/Contents/lib/python3.6/site-packages/pyspark/ml/wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/python.app/Contents/lib/python3.6/site-packages/pyspark/ml/recommendation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
+          <caret line="403" column="26" lean-forward="false" selection-start-line="403" selection-start-column="26" selection-end-line="403" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/itembased_sp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        <state relative-caret-position="537">
+          <caret line="37" column="17" lean-forward="false" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/itemBased.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
